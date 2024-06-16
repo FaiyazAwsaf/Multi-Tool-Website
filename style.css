@@ -4,13 +4,13 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: linear-gradient(to bottom, #232730, #4f6181);
+    background: #bdd2f6;
     font-family: Arial, sans-serif;
-    color: #101010;
+    color: #ffffff;
 }
 
 .weather-app {
-    background: rgb(187, 200, 255);
+    background: linear-gradient(to bottom, #383e4c, #4f6181);
     border-radius: 10px;
     padding: 20px;
     text-align: center;
@@ -58,5 +58,15 @@ body {
 }
 
 .details {
+    /* display: flex;
+    justify-content: space-around;
     font-size: 0.9em;
+    background-color: rgba(0, 47, 122, 0.3);
+    border-radius: 10px; */
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px 20px;
+    padding: 10px;
+    background-color: rgba(0, 47, 122, 0.3);
+    border-radius: 10px;
 }

@@ -13,17 +13,18 @@ document.getElementById('search-btn').addEventListener('click', function() {
                 const temp = Math.round(data.main.temp); 
                 const humidity = data.main.humidity;
                 const weatherSummary = data.weather[0].description;         
-                const icon = data.weather[0].icon;
                 const location = `${data.name}, ${data.sys.country}`;
-                //const location = data.name;
+                const airPressure = data.main.pressure;
+                const feelsLike = data.main.feels_like;
 
 
                 document.getElementById('temp').innerText = `${temp}°C`;
                 document.getElementById('weatherSummary').innerText = `${capitalizeFirstLetter(weatherSummary)}`;
                 document.getElementById('humidity').innerText = `${humidity}%`;
                 document.getElementById('windSpeed').innerText = `${windSpeed} km/h`;
-                document.getElementById('icon').src = `http://openweathermap.org/img/wn/${icon}.png`;
                 document.getElementById('location').innerText = `${location}`;
+                document.getElementById('airPressure').innerText = `${airPressure}`;
+                document.getElementById('feelsLike').innerText = `${feelsLike}`;
             } else {
                 alert('City not found');
             }
