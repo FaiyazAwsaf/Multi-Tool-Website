@@ -1,5 +1,6 @@
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -7,6 +8,11 @@ body {
     background: #bdd2f6;
     font-family: Arial, sans-serif;
     color: #ffffff;
+}
+
+.header {
+    font-size: 2em;
+    color: #070101;
 }
 
 .weather-app {

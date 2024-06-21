@@ -8,30 +8,13 @@ function rollDice() {
     for(let i=0; i<numOfDice; i++) {
         const result = Math.floor(Math.random() * 6) + 1;
         results.push(result);
-        images.push
+        images.push(`<img src="../Images/${result}.png" alt="Empty Dice">`)
     }
     console.log(results);
+    console.log(images);
 
-    diceResult = results;
-       
-    if(result == 1) {
-        diceImage.scr = "";
-    }
-    else if(result == 2 ) {
-        diceImage.scr = "";
-    }
-    else if(result == 3 ) {
-        diceImage.scr = "";
-    }
-    else if(result == 4 ) {
-        diceImage.scr = "";
-    }
-    else if(result == 5 ) {
-        diceImage.scr = "";
-    }
-    else if(result == 6 ) {
-        diceImage.scr = "";
-    }
+    diceImage.innerHTML = images.join('  ');
+
 
 }
   
@@ -39,13 +22,5 @@ function rollDice() {
 document.getElementById('roll-btn').addEventListener('click', function() {
 
     rollDice();
-    
-    
-    
-    
-    
-    
-    
-    
     
 });

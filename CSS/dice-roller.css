@@ -7,11 +7,12 @@ body {
     margin: 0;
     background: linear-gradient(to bottom, #997c2e, #ab9748);
     font-family: Arial, sans-serif;
-    color: #ffffff;
+    color: #000000;
 }
 
 .header {
     font-size: 3em;
+    color: azure;
 }
 .contents {
     border-radius: 10px;
@@ -27,4 +28,19 @@ input {
     font-size: 1em;
     width: 100px;
 
+}
+
+#roll-btn {
+    text-align: center;
+    font-size: 1em;
+    width: 150px;
+    padding: 2px;
+    margin-top: 20px;
+    background-color: rgb(255, 174, 0);
+
+}
+
+#diceImage img {
+    width: 150px;
+    padding: 20px;
 }
