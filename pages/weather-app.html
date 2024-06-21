@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="../CSS/weather-app.css">
+</head>
+<body>
+    <div class="weather-app">
+        <div class="search-bar">
+            <input type="text" id="city-input" placeholder="Enter city">
+            <button id="search-btn">Search</button>
+        </div>
+        <div class="weather-info">
+            <div class="weather-icon">
+                <img id="icon" src="../Images/cloud.png" alt="Weather Icon">
+            </div>
+            <div class="temperature">
+                <p id="temp">0°C</p>
+            </div>
+            <div class="location">
+                <!-- <span id="location">Location</span> -->
+                <h2 id="location">Location</h2>
+                <div class="weather-summary">
+                    <h4 id="weatherSummary">cloudy</h4>
+                </div>
+            </div>
+        </div>
+        <div class="details">            
+            <div class="humidity">
+                <h3>Humidity</h3>
+                <p id="humidity">0%</p>
+            </div>
+            <div class="wind-speed">
+                <h3>Wind Speed</h3>
+                <p id="windSpeed">0 m/s</p>
+            </div>
+            <div class="feels-like">
+                <h3>Feels Like</h3>
+                <p id="feelsLike">0°C</p>
+            </div>
+            <div class="air-pressure">
+                <h3>Air Pressure</h3>
+                <p id="airPressure">0 Pa</p>
+            </div>
+        </div>
+        
+    </div>
+    <script src="../JS/weatherApp.js"></script>
+</body>
+</html>

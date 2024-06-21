@@ -1,6 +1,3 @@
-
-
-
 function displayWeather(){
     const city = document.getElementById('city-input').value;
     const apiKey = '1379f41b1aa7a0cf6db28de6974844b5'; 
@@ -18,7 +15,6 @@ function displayWeather(){
                 const airPressure = data.main.pressure;
                 const feelsLike = data.main.feels_like;
 
-
                 document.getElementById('temp').innerText = temp + "°C";
                 document.getElementById('weatherSummary').innerText = `${capitalizeFirstLetter(weatherSummary)}`;
                 document.getElementById('humidity').innerText = `${humidity}%`;
@@ -26,15 +22,21 @@ function displayWeather(){
                 document.getElementById('location').innerText = `${location}`;
                 document.getElementById('airPressure').innerText = `${airPressure} Pa`;
                 document.getElementById('feelsLike').innerText = `${feelsLike} °C`;
+                
 
+                // Incomplete weather icon display
+                if(data.weather[0].main == "Clouds") {
+                    document.getElementById('icon').src = "Images/cloud.png";
+                }
                 
 
             } else {
                 alert('City not found');
             }
+            console.log('API Response:', data);
         })
         .catch(error => console.error('Error fetching data:', error));
-        console.log('API Response:', data);
+        
 }
     
 function capitalizeFirstLetter(string) {

@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to bottom, #997c2e, #ab9748);
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+}
+
+.header {
+    font-size: 3em;
+}
+.contents {
+    border-radius: 10px;
+    background: #ded388;
+    padding: 20px;
+    font-size: 1.5em;
+    text-align: center;
+    width: 300px;
+}
+
+input {
+    text-align: center;
+    font-size: 1em;
+    width: 100px;
+
+}
