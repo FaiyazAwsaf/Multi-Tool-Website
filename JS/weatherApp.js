@@ -7,13 +7,13 @@ function displayWeather(){
         .then(response => response.json())
         .then(data => {
             if (data.cod === 200) {
-                const windSpeed = data.wind.speed;
+                const windSpeed =  Math.round(data.wind.speed);
                 const temp = Math.round(data.main.temp); 
                 const humidity = data.main.humidity;
                 const weatherSummary = data.weather[0].description;         
                 const location = `${data.name}, ${data.sys.country}`;
                 const airPressure = data.main.pressure;
-                const feelsLike = data.main.feels_like;
+                const feelsLike =  Math.round(data.main.feels_like);
 
                 document.getElementById('temp').innerText = temp + "°C";
                 document.getElementById('weatherSummary').innerText = `${capitalizeFirstLetter(weatherSummary)}`;
